@@ -3,6 +3,11 @@
 
 Ansible role for mounting an AWS S3 bucket via FUSE. The role installs and configures [s3fs-fuse](https://github.com/s3fs-fuse/s3fs-fuse) on RedHat/CentOS or Debian/Ubuntu Linux.
 
+## Differences from the original bastiaanvanassche's repo
+
+  - More prominent way of using iam roles instead of key/secret for authentication
+  - Usage of fstab to persist mounted drives between restarts
+
 ## Requirements
 
 An AWS account and an existing S3 bucket. Tested on Ubuntu 12.04, 14.04, 16.04 and CentOS 7.
